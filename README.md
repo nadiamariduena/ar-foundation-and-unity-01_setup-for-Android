@@ -173,3 +173,21 @@ Go to unity (in case you dont have it) and download it:
 [<img src="./read-img/going-one-version-under.gif"/>]()
 
 <br>
+
+#### As you can see in the image above, I had to repeat all the process, now I can finally continue.
+
+🔴 On the top bar, click on the **advanced** to unfold the dropdown, there choose \*\*show previous packages
+
+<br>
+
+#### Install the following
+
+- to install them click on the bottom right of the window
+
+<br>
+
+- AR Foundation ✋
+
+- AR Subsystems ✋
+
+- ARCore XR Plugin ✋
