@@ -132,3 +132,17 @@ Go to unity (in case you dont have it) and download it:
 <br>
 
 [<img src="./read-img/changing-settings-2.gif"/>]()
+
+<br>
+
+- 🔴 There is One thing I didnt find in the settings and that you can see He changed in the tutorial (it possible that the version of unity os the reason) but I Will see if it causes issues at the end.
+
+<br>
+
+- ⚠️ Also.. there are a couple of comments that you should be aware
+
+> For those of you getting a black screen on your phone, go to: edit>project settings>XRPlugin-Management and then check the box for "AR Core". This will fix the black screen. You might also need to enable permissions on your phone.
+
+<br>
+
+[<img src="./read-img/changing-settings-3.gif"/>]()
