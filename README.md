@@ -16,6 +16,16 @@
 #### Visit: [AR Foundation](https://unity.com/unity/features/arfoundation) ✋
 
 <br>
+
+## Plans and pricing
+
+[Plans and pricing](https://store.unity.com/front-page?check_logged_in=1)
+
+<br>
+
+[<img src="./read-img/plans-pricing.jpg"/>]()
+
+<br>
 <br>
 
 #### 01: Setup for Android 🍰
