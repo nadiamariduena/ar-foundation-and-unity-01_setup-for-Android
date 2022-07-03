@@ -146,3 +146,30 @@ Go to unity (in case you dont have it) and download it:
 <br>
 
 [<img src="./read-img/changing-settings-3.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+### Install the packages
+
+- Close the 2 modals, now click on **window** (in the top bar) , there click on **package manager**, another popup will show
+
+<br>
+
+#### 🔴 The version I had didnt contain the packages he show in his tutorial, so I will download the version <u>201904.40f1</u> just to make this project work, later on I will try an updated version of this
+
+- It took some time to download the lower version, now I have what he has in the video :)
+
+<br>
+<br>
+
+<br>
+
+[<img src="./read-img/going-one-version-under.gif"/>]()
+
+<br>
