@@ -5,7 +5,7 @@
 
 - This will be the first chapter of a series of tutorials
 
-- CRedits: [AR foundation 01: setup for android](https://youtu.be/0mpsiO2lCx0) by **Dinesh Punni**
+<!-- - CRedits: [AR foundation 01: setup for android](https://youtu.be/0mpsiO2lCx0) by **Dinesh Punni** -->
 
 <br>
 
@@ -29,3 +29,24 @@
 <br>
 
 #### 01: Setup for Android 🍰
+
+<br>
+
+Go to unity (in case you dont have it) and download it:
+
+##### [INSTALL UNITY In Less Than 3 MINUTES (Beginner Guide 2022)](https://www.youtube.com/watch?v=5aqCVUt8KY4)
+
+<br>
+<br>
+
+#### In case you already have it, install the latest ✋
+
+- the **2019.2.0f1** is the one I will be using for this tutorial
+
+<br>
+
+- Once you choose the version, click next, now choose the packages (this tutorial I will be using **android**) , (**linux Build Support**) and (**WebGL** Build Support)
+
+<br>
+
+[<img src="./read-img/installing-packages.gif"/>]()
