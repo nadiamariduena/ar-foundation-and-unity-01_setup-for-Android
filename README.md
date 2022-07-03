@@ -182,7 +182,7 @@ Go to unity (in case you dont have it) and download it:
 
 #### Install the following
 
-- to install them click on the bottom right of the window
+- to install them, click on the tab of the package you desire to install, then click on the bottom right of the window
 
 <br>
 
