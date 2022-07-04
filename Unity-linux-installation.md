@@ -91,7 +91,7 @@ check the mn 4:14 of the video below:
 
 #### [Install Unity 2022 on Mac, Windows or Linux](https://www.youtube.com/watch?v=xgRNdGuDRbw)
 
-> Read all the options
+> Read all the options (because it can cause issues if you are missing modules)
 
 <br>
 
@@ -99,3 +99,40 @@ check the mn 4:14 of the video below:
 
 <br>
 <br>
+
+---
+
+<br>
+<br>
+
+# 🌈
+
+### Start a project
+
+- In your UNITY editor
+
+<br>
+
+- click on the tab **projects** , click **NEW** (at the right side of button, you will have an arrow, choose the unity version you want to use for the new project template you are going to start)
+
+- Once you do that it will prepare all you need for the project, once it s done you will see a dark window
+
+<br>
+
+- Now go to the **File** , select **Build Settings**, choose **android**, now click on **Player Settings**
+
+<br>
+
+- Once you open the **Player settings window** , scroll down to the **XR Plug-in Management** , enable **ARCore** (at the right side of the window)
+
+[<img src="./read-img/nuilding-settings-0.gif"/>]()
+
+<br>
+
+- Now click on **ARCore** , be sure its set like this:
+
+> **Requirement: Required** , **Depth: Required** , Ignore Gradle Version **unchecked**
+
+<br>
+
+[<img src="./read-img/ARCore-setup.gif"/>]()
