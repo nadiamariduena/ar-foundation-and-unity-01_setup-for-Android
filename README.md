@@ -172,3 +172,15 @@
 Key Point: Developers starting new projects should instead use the ARCore Extensions for AR Foundation and refer to the latest documentation.
 
 ##### Read more here: [the warning ](https://developers.google.com/ar/develop/unity/android-11-build)
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+#### I am testing a couple of things related to unity and android before finishing this project
+
+> As I am still not sure if all the issues are related to the SDK or new/old versions etc... so it will be a long night again
