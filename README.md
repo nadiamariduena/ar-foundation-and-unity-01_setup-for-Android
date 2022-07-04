@@ -140,8 +140,26 @@
   ](https://www.youtube.com/watch?v=DBg8ltfKGSA&list=LL&index=1&ab_channel=CodeProf)
 
   <br>
+  <br>
 
-- for linux [How to install the Gradle Build Tool on Linux for automated building](https://youtu.be/QrkriGGHypA)
+  # 👾
+
+#### This one work for me but before installing Gradle you have to install JAVA
+
+<br>
+
+##### 1. Install java /JDK [How To Install Oracle Java (JDK) On Ubuntu 20.04 LTS, Debian Linux](https://youtu.be/ogWKP9Lm-Qo)
+
+- [Error:could not create the Java Virtual Machine Error:A fatal exception has occured.Program will exit](https://stackoverflow.com/questions/37186197/errorcould-not-create-the-java-virtual-machine-errora-fatal-exception-has-occu)
+
+<br>
+<br>
+
+##### 2. [How to Install Gradle on Ubuntu 20 04 | How to Install Gradle v7.0 Latest on Ubuntu 20.04 LTS](https://www.youtube.com/watch?v=CWV0gE2nDNA&ab_channel=DevOpsHint)
+
+- follow the instructions in the video above [downloading Gradle!](https://gradle.org/next-steps/?version=7.4.2&format=bin)
+
+> https://gradle.org/releases/
 
 <br>
 
