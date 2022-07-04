@@ -6,6 +6,8 @@
 
 ### How to get started with UNITY
 
+- To avoid any trouble **create an account** and choose <u>individual</u> **if you are not a student**
+
 <br>
 
 #### Install the Unity Hub
