@@ -136,3 +136,60 @@ check the mn 4:14 of the video below:
 <br>
 
 [<img src="./read-img/ARCore-setup.gif"/>]()
+
+<br>
+
+<!--
+
+
+
+##### Basic set up
+
+- I will explain later
+
+[<img src="./read-img/basic-settings.gif"/>]()
+
+<br>
+<br>
+
+#### Package Manager
+
+- Go to **window** and click on package manager
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+#### The image tracker
+
+```javascript
+// DEFAULT
+//
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlaceTrackImage : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
+
+
+```
+
+
+ -->
