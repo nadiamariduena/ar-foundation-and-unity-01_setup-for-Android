@@ -82,3 +82,5 @@ sudo apt install mono-devel
 <br>
 
 #### Verify Installation
+
+https://www.mono-project.com/docs/getting-started/mono-basics/
