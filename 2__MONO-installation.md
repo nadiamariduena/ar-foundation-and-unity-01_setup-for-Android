@@ -81,6 +81,10 @@ sudo apt install mono-devel
 
 <br>
 
+[how-to-install-mono-on-ubuntu-20-04](https://linuxize.com/post/how-to-install-mono-on-ubuntu-20-04/)
+
+<br>
+
 #### Verify Installation
 
 https://www.mono-project.com/docs/getting-started/mono-basics/
