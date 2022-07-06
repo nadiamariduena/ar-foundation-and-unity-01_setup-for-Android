@@ -24,7 +24,7 @@
 
 #### the project
 
-#### [AR-foundation](./AR-foundation.md) ✋
+#### [AR-foundation](./6__AR-foundation.md) ✋
 
 [<img src="./read-img/success-cube-showing.jpg"/>]()
 
