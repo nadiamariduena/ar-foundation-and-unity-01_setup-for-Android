@@ -24,53 +24,89 @@
 
 <br>
 
-### AR Foundation is a framework purpose-built for augmented reality development that allows you to build rich experiences once, then deploy across multiple mobile and wearable AR devices.
+#### AR Foundation is a framework purpose-built for augmented reality development that allows you to build rich experiences once, then deploy across multiple mobile and wearable AR devices.
 
  <br>
 
-## Branches ✋
+#### Branches ✋
 
-##### [setUp | installation of the packages ](https://github.com/nadiamariduena/ar-foundation-and-unity-01_setup-for-Android/tree/0-setup-installation-pachages)
-
-<br>
-
-## Docs
-
-#### [About AR Foundation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.2/manual/index.html)
+#### 001 [setUp | installation of the packages ](https://github.com/nadiamariduena/ar-foundation-and-unity-01_setup-for-Android/tree/0-setup-installation-pachages) 🔴
 
 <br>
 
-## Interesting
-
-#### Raycasting
-
-##### [Unity3d with AR Foundation - How To Select AR Objects From Camera Origin Reference Object Position?](https://youtu.be/lkQ1GSJUOJk)
+> 👾 Once you are done with the installation and the basic set up (choosing the version of UNity you want to work, setting up the plugins for the scene) , you are ready to continue with the steps above 👾
 
 <br>
 
-##### [Use touch to scale, rotate and drag AR objects | UNITY AR Foundation (ARKit & ARCore) | LeanTween](https://youtu.be/jgQVUttENTI)
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## Switch to Android
+
+- Go to **File**, then **Build settings**
+
+- choose android and click on switch
+
+ <br>
+
+[<img src="./read-img/switch-to-android.gif"/>]()
 
 <br>
 
-#### 🥭 Learn C# to continue with the tutorial below:
-
-[Beginners guide to UNITY AR Foundation (ARKit & ARCore) - Build your first AR app from scratch!](https://www.youtube.com/watch?v=KqzlGApWPEA&ab_channel=MohdHamza)
+### Player Settings
 
 <br>
 
-> The language that’s used in Unity is called C# (pronounced C-sharp). All the languages that Unity operates with are object-oriented scripting languages. Like any language, scripting languages have syntax, or parts of speech, and the primary parts are called variables, functions, and classes.
+- (Every project contains its own settings, so it can vary depending of the project and the version you are using) ... for example if you are watching atutorial from 2020 or 2019, some of these settings contain a setup that is implemented depending if android can handle it, for example in the tutorial [I am watching](https://youtu.be/0mpsiO2lCx0), he advise that we shouldn't **enable** the **Multithreaded rendering** and that is because android doesn't support it yet (I will see if I get some errors if I enable it)
+
+> Building for Android
+> When building for Android, the Multithreaded Rendering option is supported in ARCore SDK for Unity 1.17.0 or later. However, when this option is enabled in Unity 2018.1 and earlier, using the front-facing (selfie) camera is not supported. [Read more](https://developers.google.com/ar/develop/unity/mt-rendering)
 
 <br>
 
-#### [Is C# The New Javascript Programming Language?](https://youtu.be/m5ArCIMUMfM)
+### AR Plugins
 
 <br>
 
-### Basics 🌈
-
-#### [C# Tutorial For Beginners & Basics - 1. Installing Visual Studio 2022 & Quick Tips]()
+> 👍Looking for the **AR plugins** was a bit confusing because the tutorial I am watching is from unity 2019 I think, so the dashboard is different, but at the end I could find it.
 
 <br>
+
+> When i click on the white circle(as you can see on the img) I am updating the version of that specific plugin, you can do the same for all the plugins that contain that white circle.
+
+<br>
+
+- Once you open the plugins dashboard, go to the top-left of the window, and click on the **arrow** to unfold the options, then click on the **Unity Registry**
+
+<br>
+
+#### Unity Registry
+
+<br>
+
+- When you click on the **Unity Registry**, you will have a bigger array of options, there you will find the **AR** related plugins
+
+- Notice that when you click on the AR (at the right-bottom) you will see an option to **install**, click on it to install it
+
+<br>
+
+##### For this tutorial I will need the AR Foundation, AR substance systems (which I dont see in this unity version), also I will eed to enable one of the following:
+
+<br>
+
+- ARCore XR Plugin ✋
+
+or
+
+- ARKit XR Plugin ✋
+
+##### All depends of what we are going to need, but here we will use the ARCore XR Plugin
+
 <br>
 
 ---
@@ -81,6 +117,8 @@
 ## Setting up the scene 🥭
 
 - Here I will add basic elements such as: lights, object etc and the **AR camera and AR Session**
+
+<br>
 
 > **The AR Session controls the lifecycle of an AR experience** by enabling or disabling AR on the target platform. The ARSession can be on any GameObject
 
@@ -95,27 +133,34 @@
 
 ### Before Deploying to the phone
 
-- I need to upload ... , so go to your phone > settings > about phone, then scroll down and look for the **build number** (hit it several times, until a message show, it will tell you that you have enabled the **developer** mode)
+- Go to your phone **settings > about phone**, then scroll down and look for the **build number** (hit it several times, until a message shows, it will tell you that you have enabled the **developer** mode)
 
 <br>
 
-- At this point you will have the developer options, but if you dont see it, go back to the setting and inside the search bar type **developer options**
+- At this point you will have the developer options, but if you don't see it, go back to the settings and inside the search bar type **developer options**
 
+<br>
 <br>
 
 ### Developer options
 
+<br>
+
 - go to the **USB debugging** and **enable** it
-
-- connect the usb cable to your computer
-
-- once connected, it will detect your device, it will ask you to acept, then you will see a menu **USB Preferences** , choose **File Transfer**
-
->
 
 <br>
 
-- Now go to **file** > **build on settings**, create a folder and call it **Builds**, be sure that its showing you the file type **apk** (when my phone wasnt connected it didnt show me anything), now its working and it can start building
+- **connect the usb** cable to your computer
+
+<br>
+
+- Once connected, it will detect your device, it will ask you to accept the connection to your computer, then you will see a menu **USB Preferences** , choose **File Transfer**
+
+<br>
+
+- Now go to unity, **file** > **build on settings**, create a folder and call it **Builds**, be sure that its showing you the file type **apk** (when my phone wasnt connected it didnt show me anything), now its working and it can start building
+
+<br>
 
 > 🔴 I had 2 errors when **building**, one was related to the **Player Settings**, I didnt notice they were back to default, so I had to repeat the process (disabling the Multithreaded Rendering, all the other steps I mentioned before, also disabling the vulkan option that i forgot to mention, you have to scroll on top , still on the **Other Settings tab**, there you will see the Vulkan and the OpenGLES3, click on the vulkan and press minus to remove it)
 
