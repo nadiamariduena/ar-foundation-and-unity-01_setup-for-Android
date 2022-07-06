@@ -203,8 +203,7 @@ No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a val
 
 <br>
 
-[<img src="./read-img/success-cube-showing.jpg
-"/>]()
+[<img src="./read-img/success-cube-showing.jpg"/>]()
 
 <br>
 
