@@ -205,6 +205,8 @@ No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a val
 
 [<img src="./read-img/success-cube-showing.jpg"/>]()
 
+[<img src="./read-img/success2.gif"/>]()
+
 <br>
 
 <br>
