@@ -64,7 +64,13 @@
 
 - (Every project contains its own settings, so it can vary depending of the project and the version you are using) ... for example if you are watching atutorial from 2020 or 2019, some of these settings contain a setup that is implemented depending if android can handle it, for example in the tutorial [I am watching](https://youtu.be/0mpsiO2lCx0), he advise that we shouldn't **enable** the **Multithreaded rendering** and that is because android doesn't support it yet (I will see if I get some errors if I enable it)
 
-> Building for Android
+<br>
+
+#### Multithreaded Rendering
+
+<br>
+
+> **Building for Android**
 > When building for Android, the Multithreaded Rendering option is supported in ARCore SDK for Unity 1.17.0 or later. However, when this option is enabled in Unity 2018.1 and earlier, using the front-facing (selfie) camera is not supported. [Read more](https://developers.google.com/ar/develop/unity/mt-rendering)
 
 <br>
@@ -124,14 +130,18 @@ or
 
 <br>
 
-- right click on the left bar, to open the menu
+##### Right click on the left bar to open the menu, add a cube, then a pointlight
 
 [<img src="./read-img/setting-up-the-scene1.gif"/>]()
 
 <br>
 <br>
 
-### Before Deploying to the phone
+## Phone
+
+#### ✋ Now that I have the basic to test, lets continue with the phone setup:
+
+<br>
 
 - Go to your phone **settings > about phone**, then scroll down and look for the **build number** (hit it several times, until a message shows, it will tell you that you have enabled the **developer** mode)
 
@@ -142,7 +152,7 @@ or
 <br>
 <br>
 
-### Developer options
+## Developer options 👾
 
 <br>
 
@@ -158,9 +168,42 @@ or
 
 <br>
 
+- 🔴 go to your notification and click on the android one, this one will ask you if you want to **Allow USB debugging?** , click **allow**
+
+<br>
+
+<br>
+
 - Now go to unity, **file** > **build on settings**, create a folder and call it **Builds**, be sure that its showing you the file type **apk** (when my phone wasnt connected it didnt show me anything), now its working and it can start building
 
 <br>
+
+#### Errors when building 🔴
+
+- **1** Errors after installing the sdk,dotnet etc
+
+<br>
+
+> Now I no longer have errors related to sdk,dotnet etc that prevented me of building anything, what I have now is a black screen on my phone, it s receiving the unity scene but something is wrong, so to know more about the **error** , I have to go to the console in Unity and read what the error is about:
+
+<br>
+
+[No active UnityEngine.XR.ARSubsystems.XRDepthSubsystem is available.](https://forum.unity.com/threads/no-active-unityengine-xr-arsubsystems-xrdepthsubsystem-is-available.1071215/)
+
+```javascript
+No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a valid loader configuration exists in the XR project settings.
+
+```
+
+<br>
+
+#### I am going to downgrade it to see if it works in another version
+
+<br>
+
+- **2** Errors I had before installing the SDK, dotnet etc (**check the branches TO FOLLOW THE STEPS, at the top of this file**)
+
+<details> <summary>OPEN / Errors before installing sdk, dotnet etc</summary>
 
 > 🔴 I had 2 errors when **building**, one was related to the **Player Settings**, I didnt notice they were back to default, so I had to repeat the process (disabling the Multithreaded Rendering, all the other steps I mentioned before, also disabling the vulkan option that i forgot to mention, you have to scroll on top , still on the **Other Settings tab**, there you will see the Vulkan and the OpenGLES3, click on the vulkan and press minus to remove it)
 
@@ -233,6 +276,8 @@ or
 Key Point: Developers starting new projects should instead use the ARCore Extensions for AR Foundation and refer to the latest documentation.
 
 ##### Read more here: [the warning ](https://developers.google.com/ar/develop/unity/android-11-build)
+
+</details>
 
 <br>
 <br>
