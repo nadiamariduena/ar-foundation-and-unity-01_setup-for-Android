@@ -26,7 +26,7 @@
 
 #### [AR-foundation](./6__AR-foundation.md) ✋
 
-[<img src="./read-img/success-cube-showing.jpg"/>](./6__AR-foundation.m)
+[<img src="./read-img/success-cube-showing.jpg"/>](./6__AR-foundation.md)
 
 <br>
 <br>
