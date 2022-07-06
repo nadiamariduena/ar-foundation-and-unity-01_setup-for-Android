@@ -197,11 +197,23 @@ No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a val
 
 <br>
 
-#### I am going to downgrade it to see if it works in another version
+#### I am going to downgrade it to see if it works in another 👍 🌈
+
+- SO after a couple of hours of testing, I could make it work in the 2022 version, but even if I got what I wanted, I will continue to test to see the differences
+
+<br>
+
+[<img src="./read-img/success-cube-showing.jpg
+"/>]()
+
+<br>
 
 <br>
 
 - **2** Errors I had before installing the SDK, dotnet etc (**check the branches TO FOLLOW THE STEPS, at the top of this file**)
+
+<br>
+<br>
 
 <details> <summary>OPEN / Errors before installing sdk, dotnet etc</summary>
 
