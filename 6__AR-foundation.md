@@ -210,9 +210,9 @@ No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a val
 
 I took the option of **while using the app**
 
-[<img src="./read-img/allow_01.jpg"/>]()
+[<img src="./read-img/allow_01.jpg"/>](https://youtu.be/26S15twbegs)
 
-[<img src="./read-img/success-cube-showing.jpg"/>]()
+[<img src="./read-img/success-cube-showing.jpg"/>](https://youtu.be/26S15twbegs)
 
 [<img src="./read-img/success2.gif"/>]()
 
@@ -309,6 +309,8 @@ Key Point: Developers starting new projects should instead use the ARCore Extens
 <br>
 <br>
 
-#### I am testing a couple of things related to unity and android before finishing this project
+#### After a couple of tests with the 2019 version of unity, I realize that its impossible for me to get the same result of the 2022 version, the issue lays on the [GRADLE](https://docs.unity3d.com/Manual/android-gradle-overview.html) for Android (which is clashing with the version i ve installed in my computer)
 
-> As I am still not sure if all the issues are related to the SDK or new/old versions etc... so it will be a long night again
+<br>
+
+> Since I am getting the results I desire with the 2022 version I think now I can continue with the next steps
