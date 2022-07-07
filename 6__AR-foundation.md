@@ -196,12 +196,21 @@ No active UnityEngine.XR.XRInputSubsystem is available. Please ensure that a val
 ```
 
 <br>
+<br>
 
-#### I am going to downgrade it to see if it works in another 👍 🌈
+### I am going to downgrade it to see if it works in another 👍 🌈
 
 - SO after a couple of hours of testing, I could make it work in the 2022 version, but even if I got what I wanted, I will continue to test to see the differences
 
 <br>
+
+- So once it s building (and it doesnt tell that you have any errors), this message will show in your phone:
+
+<br>
+
+I took the option of **while using the app**
+
+[<img src="./read-img/allow_01.jpg"/>]()
 
 [<img src="./read-img/success-cube-showing.jpg"/>]()
 
