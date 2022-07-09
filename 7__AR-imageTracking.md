@@ -83,10 +83,83 @@
 
 ## Create the Script 🌻
 
-- Once you create the script file, double click on it to open the **visual studio code** , if it doesn't work, its because you dont have it yet, so follow this steps: [install VS](./4__integrate-VS-toUnity.md)
+- Once you create the script file, double click on it to open the **visual studio code** , if it doesn't work its because you don't have it yet, so follow this steps to install it: [install VS](./4__integrate-VS-toUnity.md)
 
 <br>
 
 [<img src="./read-img/image1_reference-script.gif"/>]()
 
 <br>
+<br>
+
+#### The first thing we are going to do is:
+
+- **add a reference** of our **reference image manager** AR
+
+<br>
+
+- Start by adding this
+
+```javascript
+using UnityEngine.XR;
+using UnityEngine.XR.ARFoundation;
+```
+
+<br>
+
+#### Then add the following functions
+
+> 🔴 If you are new like me in C#, dont worry! I think if you have a bit of experience it will be fine
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+// 1
+using UnityEngine.XR;
+using UnityEngine.XR.ARFoundation;
+
+
+public class ImageRecognitionExample : MonoBehaviour
+{
+    // 2
+     private ARTrackedImageManager _arTrackedImageManager;
+
+//
+// 3
+private void Awake()
+{
+    // 4 this makes reference to the component in unity that contains the reference we dragged and drop (the link to be exact)
+    _arTrackedImageManager = FindObjectOfType<ARTrackedImageManager>();
+   ;
+    //
+}
+// 5 subscribe when enabled (+)
+public void OnEnable()
+{
+    // here we want to subscribe to the image condition event
+   _arTrackedImageManager.trackedImagesChanged += OnImageChanged;
+}
+//
+// 6 unsubscribe when disabled (-)
+public void OnDisabled()
+{
+    // here we want to subscribe to the image condition event
+   _arTrackedImageManager.trackedImagesChanged -= OnImageChanged;
+}
+//
+// 7 now write the method (the method is related to the 2 lines of code that we have above) "OnImageChanged"
+
+public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
+{
+    //8 here we will iterate through the images
+ foreach (var trackedImage in args.added)
+ {
+     Debug.Log(trackedImage.name); //like a console log
+ }
+}
+
+
+}
+
+```
