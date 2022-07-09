@@ -155,7 +155,9 @@ public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
     //8 here we will iterate through the images
  foreach (var trackedImage in args.added)
  {
-     Debug.Log(trackedImage.name); //like a console log
+     Debug.Log(trackedImage.name);
+     //like a console log
+     /// the name corresponds to the name inside the component where i added the size of the image
  }
 }
 
@@ -163,3 +165,69 @@ public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
 }
 
 ```
+
+<br>
+<br>
+
+### Create an object 🌞
+
+<br>
+
+- Once you are done with the SCRIPT above, drag and drop the script file you see in your workspace (together with the images and other stuff), position it under the 2 other components (under the tracking image)
+
+> for demonstration i deleted the object and I created a new one
+
+<br>
+
+[<img src="./read-img/object1.gif"/>]()
+
+<br>
+
+##### Also drag and drop the cube inside the workspace, then delete the cube that is on the top (close to the directional light)
+
+> Once you have the cube inside the workspace, drag and drop it inside the **tracked image prefab** 🐎
+
+<br>
+
+[<img src="./read-img/object2.gif"/>]()
+
+<br>
+
+#### Now you can go to the build
+
+[<img src="./read-img/create-objectr.gif"/>]()
+
+<br>
+<br>
+
+##### 🔴 When I tried to build there was an error, and the reason for the error is because I created another image component and I didnt add a image, so it show me an error, the solution is either add an image or just remove the extra component
+
+[<img src="./read-img/error-object.gif"/>]()
+
+<br>
+
+#### Here you can see that it tells you that a texture is missing
+
+[<img src="./read-img/error-object1.gif"/>]()
+
+<br>
+
+#### After you remove the extra image component that is causing the error that prevents us <u>to Build the test</u>, you are ready to go
+
+- click **build and run**
+
+<br>
+
+<br>
+
+## 🍰
+
+##### To test if it works...
+
+> ✋ click on the image (in my case is the monkey) , it will open a window with the image, then use your phone in the direction of your computers screen and there you have it.
+
+<br>
+
+[<img src="./read-img/result-img1.jpg"/>]()
+
+[<img src="./read-img/result-img.gif"/>]()
