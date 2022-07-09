@@ -80,3 +80,13 @@
 [<img src="./read-img/image1_referecne1.gif"/>]()
 
 <br>
+
+## Create the Script 🌻
+
+- Once you create the script file, double click on it to open the **visual studio code** , if it doesn't work, its because you dont have it yet, so follow this steps: [install VS](./4__integrate-VS-toUnity.md)
+
+<br>
+
+[<img src="./read-img/image1_reference-script.gif"/>]()
+
+<br>
