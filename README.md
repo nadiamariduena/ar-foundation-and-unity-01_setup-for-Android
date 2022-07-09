@@ -29,6 +29,13 @@
 [<img src="./read-img/success-cube-showing.jpg"/>](./6__AR-foundation.md)
 
 <br>
+
+
+#### [AR-imageTracking](./7__AR-imageTracking.md)
+
+[<img src="./read-img/result-img.gif"/>]()
+
+<br>
 <br>
 
 ---
