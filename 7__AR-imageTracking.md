@@ -71,4 +71,12 @@
 
 <br>
 
-#### Now I need to reference the image I just created
+#### Now I need to reference the image I just created 🍭
+
+- Drag and drop the reference into the tracked image component, once you do that its going to be detected, but I will need to write a little script
+
+<br>
+
+[<img src="./read-img/image1_referecne1.gif"/>]()
+
+<br>
