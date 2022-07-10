@@ -38,6 +38,15 @@
 
 <br>
 
+- change the name of the project
+
+<br>
+
+[<img src="./read-img/create-a-project.gif"/>]()
+
+
+<br>
+
 <br>
 <br>
 
