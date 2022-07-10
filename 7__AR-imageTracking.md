@@ -1,4 +1,4 @@
-### AR Image Tracking 🍭
+### AR[ Image Tracking](https://youtu.be/o_z_Eb8Yh2g) 🍭
 
 <br>
 
@@ -81,7 +81,7 @@
 
 <br>
 
-## Create the Script 🌻
+## [Create the Script](https://youtu.be/o_z_Eb8Yh2g?t=286) 🌻
 
 - Once you create the script file, double click on it to open the **visual studio code** , if it doesn't work its because you don't have it yet, so follow this steps to install it: [install VS](./4__integrate-VS-toUnity.md)
 

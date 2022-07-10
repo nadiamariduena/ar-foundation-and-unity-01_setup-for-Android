@@ -12,26 +12,27 @@
 
 ##### [0 Unity-linux-installation](./0__Unity-linux-installation.md)
 
-##### [1 sdk_dotnet-installation.md](./1__sdk_dotnet-installation.md)
+##### [1 sdk_dotnet-installation](./1__sdk_dotnet-installation.md)
 
 ##### [2\_\_MONO-installation.md](./2__MONO-installation.md)
 
-##### [3\_\_C_compiler-installation.md](3__C_compiler-installation.md)
+##### [3\_\_C_compiler-installation](./3__C_compiler-installation.md)
 
-##### [4\_\_integrate-VS-toUnity.md](4__integrate-VS-toUnity.md)
+##### [4\_\_integrate-VS-toUnity](./4__integrate-VS-toUnity.md)
+
+##### [5\_\_AR-foundation-intro](./5__AR-foundation-intro.md)
 
 <br>
 
 #### the project
 
-#### [AR-foundation](./6__AR-foundation.md) ✋
+#### [6\_\_AR-foundation](./6__AR-foundation.md) ✋
 
 [<img src="./read-img/success-cube-showing.jpg"/>](./6__AR-foundation.md)
 
 <br>
 
-
-#### [AR-imageTracking](./7__AR-imageTracking.md)
+#### [7\_\_AR-imageTracking](./7__AR-imageTracking.md)
 
 [<img src="./read-img/result-img.gif"/>]()
 
