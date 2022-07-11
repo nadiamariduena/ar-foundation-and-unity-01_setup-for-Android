@@ -150,4 +150,30 @@ click on the material, go to the right side and change the **opaque to transpare
 <br>
 <br>
 
-### Now that we are done with the settings, we can make a PREFAB out of all this
+#### 🍭 Now that we are done with the settings, we can make a PREFAB out of all this
+
+- Go to the assets, create a folder and call it **PREFABS**
+
+<br>
+
+- click on the prefab folder, once in, drag the ARPlane from the top, and drop it inside the **prefab folder**
+
+<br>
+
+- Once you do that, click on **AR Session Origin** , at the right side you will see the 2 components: Ar session origin and AR Plane Manager
+
+<br>
+
+[<img src="./read-img/prefab-ready.gif"/>]()
+
+<br>
+
+- DRAG the **ARplane** form the prefab folder, into the **AR Plane Manager** (inside the Plane prefab) , if it doesn't work click on the little arrow of the AR Plane Manager, a window will open, once there choose the **ARPlane**
+
+<br>
+
+<br>
+
+[<img src="./read-img/prefab-ready2.gif"/>]()
+
+<br>
