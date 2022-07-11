@@ -186,3 +186,9 @@ click on the material, go to the right side and change the **opaque to transpare
 <br>
 
 - 🔴 Like always, if you have a black screen after the building, its because of the **ARCore plugin Management** , so go to the **File > Build settings > Player Settings**, there go to the bottom of the window and enable the **ArCore**
+
+<br>
+
+[<img src="./read-img/Building-plane-success.gif"/>]()
+
+<br>
