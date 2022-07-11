@@ -177,3 +177,12 @@ click on the material, go to the right side and change the **opaque to transpare
 [<img src="./read-img/prefab-ready2.gif"/>]()
 
 <br>
+
+### Build
+
+- At this point all you have to do is Build it, so check that the USB is connected and your phone is being recognized in Unity , check the [Developer options](./6__AR-foundation.md)
+
+<br>
+<br>
+
+- 🔴 Like always, if you have a black screen after the building, its because of the **ARCore plugin Management** , so go to the **File > Build settings > Player Settings**, there go to the bottom of the window and enable the **ArCore**
