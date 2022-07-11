@@ -37,6 +37,12 @@
 [<img src="./read-img/result-img.gif"/>]()
 
 <br>
+
+#### [8\_\_AR-planeDetection](./8__AR-planeDetection.md)
+
+[<img src="./read-img/Building-plane-success.gif"/>]()
+
+<br>
 <br>
 
 ---
