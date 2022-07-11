@@ -90,3 +90,29 @@
 [<img src="./read-img/meshFilter__MeshRenderer.gif"/>]()
 
 <br>
+
+#### Change some settings in the <u>line renderer</u>
+
+- Change the width to: 0.01
+
+<br>
+
+- Change the **Corner Vertices** to 4 and the **End Cap Vertices** also to 4
+
+<br>
+
+- Change the color (whatever you like)
+
+<br>
+
+- Disable the **Use World space**
+
+- in **Lighting** change the **Cast Shadows** from on to **off**, disable the **Receive Shadows**
+
+<br>
+
+- Open the little arrow inside the **Materials > Elements**, once the window open choose the "Default Line" white cube
+
+[<img src="./read-img/LineRenderer-settings.gif"/>]()
+
+<br>
