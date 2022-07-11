@@ -74,3 +74,19 @@
 [<img src="./read-img/ARPlane_ARPlaneMesh_MeshCollider.gif"/>]()
 
 <br>
+
+#### After that we need to add 2 more components in the same place, as we need a way to visualize our place, so that is going to be:
+
+- A **Mesh Filter**
+
+- and a **Mesh renderer**
+
+[<img src="./read-img/ar-default-plane1.png"/>]()
+
+<br>
+
+> When I create the cube to test, you will see that it keeps everything on top of its component
+
+[<img src="./read-img/meshFilter__MeshRenderer.gif"/>]()
+
+<br>
