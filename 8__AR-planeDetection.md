@@ -91,6 +91,10 @@
 
 <br>
 
+### Line Renderer :sunflower:
+
+<br>
+
 #### Change some settings in the <u>line renderer</u>
 
 - Change the width to: 0.01
@@ -113,6 +117,37 @@
 
 - Open the little arrow inside the **Materials > Elements**, once the window open choose the "Default Line" white cube
 
+<br>
+
 [<img src="./read-img/LineRenderer-settings.gif"/>]()
 
 <br>
+
+##### Now that I am done with the line render, add a material.
+
+<br>
+
+### Material :sunflower:
+
+- Right click on the assets, when the menu opens, Create a folder, call it **materials**
+
+<br>
+
+- Click on the materials folder and create a **material** (right click to open the menu)
+
+<br>
+
+click on the material, go to the right side and change the **opaque to transparent**
+
+<br>
+
+- Click on the color and reduce the opacity to 75, As you can see you have the **R,G,B,A**, change only the A from 255 to 75
+
+<br>
+
+[<img src="./read-img/material-before-prefab.gif"/>]()
+
+<br>
+<br>
+
+### Now that we are done with the settings, we can make a PREFAB out of all this
