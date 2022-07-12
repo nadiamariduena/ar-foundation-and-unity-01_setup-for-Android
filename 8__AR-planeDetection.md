@@ -47,7 +47,11 @@
 
 <br>
 
-### Plane Prefab 🍰
+#### Create the PLANE
+
+#### Plane Prefab 🍰
+
+<BR>
 
 > **When a plane is detected, the AR Plane Manager instantiates the Plane Prefab** to represent the plane. The Plane Prefab can stay null, but the plane manager ensures the instantiated GameObject has an ARPlane component on it. The ARPlane component only contains data about the detected plane.
 
@@ -55,7 +59,7 @@
 
 <br>
 
-### Create the Plane Prefab 🍰
+#### Create the Plane Prefab 🍰
 
 - After creating the Plane manager, you will see that there is a **Plane prefab** required, at the moment in our project we dont have one. ✋ There are some pre build **prefabs** you can use from the **unity samples** (they look like this [minute: 5:18](https://youtu.be/uWWiYfPTUtU?t=318))
 
@@ -79,19 +83,21 @@
 
 - A **Mesh Filter**
 
-- and a **Mesh renderer**
+- A **Mesh renderer**
+
+- and the **Line renderer**
 
 [<img src="./read-img/ar-default-plane1.png"/>]()
 
 <br>
 
-> When I create the cube to test, you will see that it keeps everything on top of its component
+> ✋ When I create the cube to test, you will see that it keeps everything on top of its component
 
 [<img src="./read-img/meshFilter__MeshRenderer.gif"/>]()
 
 <br>
 
-### Line Renderer :sunflower:
+### Add the Line Renderer :sunflower:
 
 <br>
 
@@ -115,7 +121,7 @@
 
 <br>
 
-- Open the little arrow inside the **Materials > Elements**, once the window open choose the "Default Line" white cube
+- Now click on the tab above (Inside the **mesh renderer**), Open the little arrow inside the **Materials > Elements**, once the window open choose the "Default Line" white cube
 
 <br>
 
