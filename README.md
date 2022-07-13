@@ -50,4 +50,10 @@
 <br>
 <br>
 
-## AR
+## AR - learning 🍨
+
+#### [xrbootcamp](https://xrbootcamp.com)
+
+#### [immersive insiders](https://learn.immersive-insiders.com)
+
+> **immersive insiders** We teach you the fundamental programming and design skills, so you become job-ready.
