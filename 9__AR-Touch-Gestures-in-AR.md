@@ -36,7 +36,11 @@
 
 ## 🍰
 
-#### Now that we have the Plane, we can finally start
+## Now that we have the Plane, we can finally start
+
+<br>
+
+#### 🔴 DONT WORRY about the script, after I am done with the AR basic course, I will continue with [Learn C# for Unity](https://xrbootcamp.com/pre-coding-course/)
 
 <br>
 
@@ -181,6 +185,11 @@ void Start();
 //7  ✋
 [RequiredComponent(typeOf(ARRaycastManager))];
 ```
+
+<br>
+<br>
+
+#### 🔴 DONT WORRY about the script, after I am done with the AR basic course, I will continue with [Learn C# for Unity](https://xrbootcamp.com/pre-coding-course/)
 
 <br>
 <br>
