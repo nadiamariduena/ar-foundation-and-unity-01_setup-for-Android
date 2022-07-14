@@ -408,19 +408,20 @@ var hitPose = hits[0].pose;
 
 <br>
 
-#### So lets just spawn some objects, and then if there is one already, then lets just move it ✋
+#### So lets just [spawn](https://youtu.be/E7gmylDS1C4) some objects, and then if there is one already, then lets just move it ✋
 
 ```javascript
-//  if there is none,
+//  if there is none/null,
 if (spawnedObject == null) {
-  // then: instanciate/create one, add the position and rotation
+  // then: instantiate/create one, add the position and rotation
   spawnedObject = instantiate(
     gameObjectToInstantiate,
     hitPose.position,
     hitPose.rotation
   );
 } else {
-  //
+  // because if we have already an object, we can just move it around
+  spawnedObject.transform.position = hitPose.position;
 }
 ```
 
@@ -431,4 +432,106 @@ public GameObject gameObjectToInstantiate;
 //
 // 3 then private variables: spawnedObject
 private GameObject spawnedObject;
+```
+
+<br>
+<br>
+
+#### Before going back to unity, this is what we have
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+// 1 import the 2 libraries below( UnityEngine.XR.ARFoundation, UnityEngine.XR.ARSubsystems)
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
+
+
+
+//7
+[RequiredComponent(typeOf(ARRaycastManager ))]
+//
+//
+public class ARTapToPlaceObject : MonoBehaviour
+{
+   //2 now create some variables
+//    first we will start with a public variable:    gameObjectToInstantiate
+public GameObject gameObjectToInstantiate;
+//
+// 3 then private variables: spawnedObject
+private GameObject spawnedObject;
+// 4
+private ARRaycastManager _arRaycastManager;
+//  5
+private Vector2 touchPosition; //the position will be use when we
+// will tap on the screen to then detect where we have to shoot our
+// raycast and where to place out object
+//
+// 6 the last thing we need is a reference of our raycast hits, so
+// here below we will create a static list of our "raycast hits"  List<ARRaycastHits>
+// call it "hits"
+//
+static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
+
+//
+
+
+
+//
+//
+// 8
+   private void Awake()
+   {
+       _arRaycastManager = GetComponent<ARRaycastManager>();
+   }
+//
+// bool / boolean
+// 9
+bool TryGetTouchPosition(out Vector2 touchPosition)
+{
+    // 10
+    if (Input.touchCount > 0)
+    {
+        // if the Input.TouchCount is greater than 0 , then we want to get the touchPosition and then return  true, because we are returning a bool, and if there is nothing (if there is not touchCount) then the touch position stays as default, so if there is not touchCount we are returning false
+        touchPosition = Input.GetTouch(index 0).position;
+        return true;
+
+    }
+    //11 here we tell it that we will want the touchPosition to be default
+    touchPosition = default;
+    return false;
+}
+// the last thing we will do is to shoot the array in the update method
+//
+    //12 Update is called once per frame
+    void Update()
+    {
+        // if this one below is false (means that we are not detecting any touch)then we want to return it
+        // 13
+      if(!TryGetTouchPosition(out Vector2 touchPosition))
+      return;
+    //
+    //14 ** RAYCAST **   Now we want to shoot the raycast
+    // so here below we have the _arRaycastManager that we have defined on the top and then this one is going to use the raycast method which then give us a touch position, then it takes the "hits" from our static list on the top,
+    if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
+    {
+        //   15
+        var hitPose = hits[0].pose;
+        //16  then we have to figure out if there is a spawned object already, if there is none, then we want to instantiate it and if there is an object already then we want to basically move it around, it will totally depends on the use case, basically what we want to build in this demo which is also from the ARFoundation samples, is that if there is an object already, then we just wanted to have this one cube to move around, but you can use anything, you can also limit it to 5 objects, here it will totally depends on your demo and whatever you want to build
+        //
+        if(spawnedObject == null)
+        //17 if there is none, then: instanciate / create one
+        {
+            spawnedObject = instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
+        }
+        else
+        {
+            //18 because if we have already an object, we can just move it around
+        spawnedObject.transform.position = hitPose.position;
+        }
+    }
+    }
+}
+
 ```
