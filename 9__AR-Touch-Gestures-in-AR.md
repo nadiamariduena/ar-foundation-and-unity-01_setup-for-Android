@@ -200,7 +200,16 @@ void Start();
 
 - for this basic input we are going to use the **get touch** method
 
+#### we will be using vector2: so [What is a Vector2 and Vector3 in Unity?](https://stackoverflow.com/questions/54477121/what-is-a-vector2-and-vector3-in-unity)
+
+> It is representation of **2D** vectors and points, used to represent 2D **positions**, only two axis **x&y**
+
+>
+
 <br>
+<br>
+
+### Create the method
 
 ```javascript
 using System.Collections;
@@ -275,12 +284,7 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
       if(!TryGetTouchPosition(out Vector2 touchPosition))
       return;
     //
-    //14   Now we want to shoot the raycast
-    // so here below we have the _arRaycastManager that we have defined on the top and then this one is going to use the raycast method which then give us a touch position, then it case the "hits" from our static list on the top,
-    if(_arRaycastManager.Raycast(touchPosition, hits, TrackableType.PlaneWithinPolygon))
-    {
-        // checkout the trackable type:  https://docs.unity3d.com/2019.2/Documentation/ScriptReference/Experimental.XR.TrackableType.html
-    }
+    // 14 ** RAYCAST **
     }
 }
 
@@ -289,8 +293,67 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
 <br>
 <br>
 
-### Create the method
-
-> In C, Boolean is a data type that contains two types of values, i.e., 0 and 1. Basically, the bool type value represents two types of behavior, either true or false. Here, '0' represents false value, while '1' represents true value. In C Boolean, '0' is stored as 0, and another integer is stored as 1.
+> In C, **Boolean/bool** is a data type that contains two types of values, i.e., 0 and 1. Basically, the bool type value represents two types of behavior, either true or false. Here, '0' represents false value, while '1' represents true value. In C Boolean, '0' is stored as 0, and another integer is stored as 1.
 
 [read more here / C Boolean](https://www.javatpoint.com/c-boolean)
+
+<br>
+<br>
+
+# RAYCAST 🍰
+
+<br>
+
+- ✋ When you use raycasting to perform object placement, you can both place an object on a plane, as well as on a feature point or any other trackable. Note that just placing the object in the Unity scene at the intersection point doesn’t anchor the object to the real world (yet!). This means that over time, its perceived position might slightly change, as it’s not attached to the physical object but instead placed in a virtual static coordinate system.
+
+#### Read More: [Raycast & Anchor: Placing AR Foundation Holograms (Part 3)](https://www.andreasjakl.com/raycast-anchor-placing-ar-foundation-holograms-part-3/)
+
+<br>
+<br>
+
+#### ✋ So here below we have the _\_arRaycastManager_ that we have defined on the top
+
+```javascript
+//
+private ARRaycastManager _arRaycastManager;
+
+```
+
+##### And then this one is going to use the raycast method which then give us a touch position, then it takes the "hits" from our static list on the top:
+
+<br>
+
+```javascript
+
+static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
+```
+
+<br>
+
+### TrackableType 🍪
+
+##### In general, a trackable in AR Foundation is anything that can be detected and tracked in the real world. This starts with basics like anchors, point clouds and planes. More advanced tracking even allows environmental probes for realistic reflection cube maps, face tracking, or even information about other participants in a collaborative AR session.
+
+#### Read More: [andreasjakl.com / Trackables)](https://www.andreasjakl.com/category/android/)
+
+<br>
+
+[<img src="./read-img/trackables.png "/>]()
+
+<br>
+
+<br>
+
+```javascript
+//14 ** RAYCAST **   Now we want to shoot the raycast
+// so here below we have the _arRaycastManager that we have defined on the top and then this one is going to use the raycast method which then give us a touch position, then it takes the "hits" from our static list on the top,
+if (
+  _arRaycastManager.Raycast(
+    touchPosition,
+    hits,
+    TrackableType.PlaneWithinPolygon
+  )
+) {
+  // checkout the trackable type:  https://docs.unity3d.com/2019.2/Documentation/ScriptReference/Experimental.XR.TrackableType.html
+}
+```
