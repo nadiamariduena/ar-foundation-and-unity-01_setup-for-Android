@@ -66,3 +66,7 @@
 ##### [Learn Unity - Beginner's Game Development Tutorial](https://youtu.be/gB1F9G0JXOo)
 
 ##### [LEARN UNITY - The Most BASIC TUTORIAL I'll Ever Make](https://youtu.be/pwZpJzpE2lQ)
+
+<br>
+
+##### check the video: [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
