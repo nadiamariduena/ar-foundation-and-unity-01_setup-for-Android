@@ -358,8 +358,11 @@ static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
 ```
 
 <br>
+<br>
 
-## TrackableType 🍪
+## [TrackableType](https://docs.unity3d.com/2019.2/Documentation/ScriptReference/Experimental.XR.TrackableType.html) 🍪
+
+<br>
 
 ##### In general, a trackable in AR Foundation is anything that can be detected and tracked in the real world. This starts with basics like anchors, point clouds and planes. More advanced tracking even allows environmental probes for realistic reflection cube maps, face tracking, or even information about other participants in a collaborative AR session.
 
@@ -377,16 +380,18 @@ static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
 
 <br>
 
+### So what do we do with the Raycast?
+
+> [Pose](https://docs.unity3d.com/ScriptReference/Pose.html) Representation of a Position, and a Rotation in 3D Space
+
+<br>
+
+#### we First get the hits position/hitPose
+
 ```javascript
-//14 ** RAYCAST **   Now we want to shoot the raycast
-// so here below we have the _arRaycastManager that we have defined on the top and then this one is going to use the raycast method which then give us a touch position, then it takes the "hits" from our static list on the top,
-if (
-  _arRaycastManager.Raycast(
-    touchPosition,
-    hits,
-    TrackableType.PlaneWithinPolygon
-  )
-) {
-  // checkout the trackable type:  https://docs.unity3d.com/2019.2/Documentation/ScriptReference/Experimental.XR.TrackableType.html
-}
+var hitPose = hits[0].pose;
 ```
+
+<br>
+
+#### then we have to figure out if there is a [spawned](https://youtu.be/E7gmylDS1C4) object already, if there is none, then we want to instantiate it and if there is an object already then we want to basically move it around
