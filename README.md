@@ -70,8 +70,8 @@
 <br>
 <br>
 
-##### [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
+##### 🌵 [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
 
-<br>
+##### :ok_hand: scalars [Vectors & Dot Product • Math for Game Devs [Part 1]](https://youtu.be/MOYiVLEnhrw)
 
-##### ✋ scalars [Vectors & Dot Product • Math for Game Devs [Part 1]](https://youtu.be/MOYiVLEnhrw)
+##### :ok_hand: [Matrix Multiplication (Math for Game Developers)](https://youtu.be/UG530eh8q4A)
