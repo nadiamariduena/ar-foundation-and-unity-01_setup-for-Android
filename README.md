@@ -68,5 +68,10 @@
 ##### [LEARN UNITY - The Most BASIC TUTORIAL I'll Ever Make](https://youtu.be/pwZpJzpE2lQ)
 
 <br>
+<br>
 
-##### check the video: [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
+##### [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
+
+<br>
+
+##### ✋ scalars [Vectors & Dot Product • Math for Game Devs [Part 1]](https://youtu.be/MOYiVLEnhrw)
