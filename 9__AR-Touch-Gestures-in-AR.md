@@ -189,18 +189,22 @@ void Start();
 <br>
 <br>
 
-#### 🔴 DONT WORRY about the script, after I am done with the AR basic course, I will continue with [Learn C# for Unity](https://xrbootcamp.com/pre-coding-course/)
+##### 🔴 DONT WORRY about the script, after I am done with the AR basic course, I will continue with [Learn C# for Unity](https://xrbootcamp.com/pre-coding-course/)
 
 <br>
 <br>
 
 #### Now we will handle the conditional for the touch events
 
-<br>
-
 - for this basic input we are going to use the **get touch** method
 
-#### we will be using vector2: so [What is a Vector2 and Vector3 in Unity?](https://stackoverflow.com/questions/54477121/what-is-a-vector2-and-vector3-in-unity)
+<br>
+
+### 👾 Vector2 👾
+
+##### check the video: [Qu'est-ce qu'un vecteur ? | Essence de l'algèbre linéaire, chapitre 1](https://youtu.be/fNk_zzaMoSs)
+
+##### we will be using vector2: so [What is a Vector2 and Vector3 in Unity?](https://stackoverflow.com/questions/54477121/what-is-a-vector2-and-vector3-in-unity)
 
 > It is representation of **2D** vectors and points, used to represent 2D **positions**, only two axis **x&y**
 
@@ -278,7 +282,7 @@ static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
 
 <br>
 
-- There are many ways how we can find this out, but in this tutorial we are only going to use the **basic Input.GetTouch** method, but there are many assets you can download (with more complex things like swiping etc)
+- There are many ways how we can find this out, but in this tutorial we are only going to use the **basic Input.GetTouch** method, but there are many assets you can download (with more complex things like ✋ [ swiping](https://youtu.be/rjFgThTjLso) etc)
 
 <br>
 
