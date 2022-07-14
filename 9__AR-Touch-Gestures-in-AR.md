@@ -232,7 +232,7 @@ using UnityEngine.XR.ARSubsystems;
 public class ARTapToPlaceObject : MonoBehaviour
 {
    //2 now create some variables
-//    first we will start with a pubic variable:    gameObjectToInstantiate
+//    first we will start with a public variable:    gameObjectToInstantiate
 public GameObject gameObjectToInstantiate;
 //
 // 3 then private variables: spawnedObject
@@ -409,3 +409,26 @@ var hitPose = hits[0].pose;
 <br>
 
 #### So lets just spawn some objects, and then if there is one already, then lets just move it ✋
+
+```javascript
+//  if there is none,
+if (spawnedObject == null) {
+  // then: instanciate/create one, add the position and rotation
+  spawnedObject = instantiate(
+    gameObjectToInstantiate,
+    hitPose.position,
+    hitPose.rotation
+  );
+} else {
+  //
+}
+```
+
+#### as you can see the code above, is related to the variables on the top of the class
+
+```javascript
+public GameObject gameObjectToInstantiate;
+//
+// 3 then private variables: spawnedObject
+private GameObject spawnedObject;
+```
