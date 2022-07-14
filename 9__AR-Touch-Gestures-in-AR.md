@@ -535,3 +535,150 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
 }
 
 ```
+
+<br>
+<br>
+
+### 🔴 Errors
+
+- I made a few typo mistakes
+
+> **The error:** Assets/Scripts/ARTapToPlaceObject.cs(9,2): error CS0246: The type or namespace name 'RequiredComponent' could not be found (are you missing a using directive or an assembly reference?)
+
+<br>
+
+##### solution
+
+```javascript
+//before
+[RequiredComponent(typeOf(ARRaycastManager))][
+  //after
+  RequireComponent(typeOf(ARRaycastManager))
+];
+```
+
+#### 2. error
+
+> Assets/Scripts/ARTapToPlaceObject.cs(9,19): error CS0103: The name 'typeOf' does not exist in the current context
+
+```javascript
+// before
+[RequireComponent(typeOf(ARRaycastManager))][
+  // after
+  RequireComponent(typeof ARRaycastManager)
+];
+```
+
+<br>
+
+#### 3. error
+
+> Assets/Scripts/ARTapToPlaceObject.cs(52,26): error CS0103: The name 'instantiate' does not exist in the current context
+
+```javascript
+// before
+var hitPose = hits[0].pose;
+
+if (spawnedObject == null) {
+  spawnedObject = instantiate(
+    gameObjectToInstantiate,
+    hitPose.position,
+    hitPose.rotation
+  );
+}
+// after
+var hitPose = hits[0].pose;
+
+if (spawnedObject == null) {
+  spawnedObject = Instantiate(
+    gameObjectToInstantiate,
+    hitPose.position,
+    hitPose.rotation
+  );
+}
+```
+
+<br>
+<br>
+
+### ⚠️ As long as you have errors you will not see the array component appear, I will purposely make an error and you will see the difference
+
+<br>
+
+<br>
+
+- As you can see in the beginning when I drag and drop the script into the component area, it only gives me the script, and not the script **ARTapToPlaceObject** + the **AR Raycast Manager**, at the end after i solved the typos it worked.
+
+<br>
+
+[<img src="./read-img/after-script-errors-typo.gif"/>]()
+
+<br>
+
+```javascript
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
+
+
+
+[RequireComponent(typeof(ARRaycastManager))]
+//
+public class ARTapToPlaceObject : MonoBehaviour
+{
+
+public GameObject gameObjectToInstantiate;
+
+private GameObject spawnedObject;
+private ARRaycastManager _arRaycastManager;
+private Vector2 touchPosition;
+
+static List<ARRaycastHit> hits = new  List<ARRaycastHit>();
+
+ private void Awake()
+   {
+       _arRaycastManager = GetComponent<ARRaycastManager>();
+   }
+
+bool TryGetTouchPosition(out Vector2 touchPosition)
+{
+    if (Input.touchCount > 0)
+    {
+        touchPosition = Input.GetTouch(index: 0).position;
+        return true;
+
+    }
+
+    touchPosition = default;
+    return false;
+}
+
+void Update()
+    {
+      if(!TryGetTouchPosition(out Vector2 touchPosition))
+      return;
+
+
+    if(_arRaycastManager.Raycast(touchPosition, hits, trackableTypes: TrackableType.PlaneWithinPolygon))
+    {
+        var hitPose = hits[0].pose;
+
+        if(spawnedObject == null)
+         {
+         spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
+        }
+        else
+        {
+         spawnedObject.transform.position = hitPose.position;
+        }
+    }
+  }
+}
+
+
+```
+
+<br>
