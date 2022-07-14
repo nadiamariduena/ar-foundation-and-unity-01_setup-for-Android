@@ -398,4 +398,14 @@ var hitPose = hits[0].pose;
 
 <br>
 
-#### then we have to figure out if there is a [spawned](https://youtu.be/E7gmylDS1C4) object already, if there is none, then we want to instantiate it and if there is an object already then we want to basically move it around
+#### then we have to figure out if there is a [spawned](https://youtu.be/E7gmylDS1C4)object already, if there is none, then we want to instantiate it and if there is an object already
+
+<br>
+
+> ✋ then we want to basically move it around, it will totally depends on the use case, basically what we want to build in this demo which is also from the **ARFoundation samples**, is that if there is an object already, then we just wanted to have this one cube to move around, but you can use anything, you can also limit it to 5 objects.
+
+- Here it will totally depends on your demo and whatever you want to build.
+
+<br>
+
+#### So lets just spawn some objects, and then if there is one already, then lets just move it ✋
