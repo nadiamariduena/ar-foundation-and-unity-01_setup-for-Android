@@ -236,8 +236,7 @@ private GameObject spawnedObject;
 // 4
 private ARRaycastManager _arRaycastManager;
 //  5
-private Vector2 touchPosition; //the position will be use when we
-// will tap on the screen to then detect where we have to shoot our
+private Vector2 touchPosition; //the position will be use when we will tap on the screen to then detect where we have to shoot our
 // raycast and where to place out object
 //
 // 6 the last thing we need is a reference of our raycast hits, so
@@ -245,18 +244,48 @@ private Vector2 touchPosition; //the position will be use when we
 // call it "hits"
 //
 static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
+```
 
-//
+<br>
+<br>
 
+### Referencing the Raycast Manager: <u>\_arRaycastManager</u>
 
+<br>
 
-//
-//
+```javascript
 // 8
    private void Awake()
    {
+    //    Here we want to reference our raycast manager
        _arRaycastManager = GetComponent<ARRaycastManager>();
    }
+//
+```
+
+#### Now we can reference it because we have the required component here:
+
+```javascript
+//7
+[RequiredComponent(typeOf(ARRaycastManager))];
+//
+//
+```
+
+<br>
+
+#### The next step, we need to get our input so we need to know if we touched on the screen and then where we touch on the screen.
+
+<br>
+
+- There are many ways how we can find this out, but in this tutorial we are only going to use the **basic Input.GetTouch** method, but there are many assets you can download (with more complex things like swiping etc)
+
+<br>
+
+- interesting [Unity C# Beginner Tutorial - Methods (Part 03)](https://www.youtube.com/watch?v=sxMHM_ONkI8)
+
+```javascript
+//
 //
 // bool / boolean
 // 9
@@ -265,7 +294,7 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
     // 10
     if (Input.touchCount > 0)
     {
-        // if the Inuut.TouchCount is greater than 0 , then we want to get the touchPosition and then return  true, because we are returning a bool, and if there is nothing (if there is not touchCount) then the touch position stays as default, so if there is not touchCount we are returning false
+        // if the Input.TouchCount is greater than 0 , then we want to get the touchPosition and then return  true, because we are returning a bool, and if there is nothing (if there is not touchCount) then the touch position stays as default, so if there is not touchCount we are returning false
         touchPosition = Input.GetTouch(index 0).position;
         return true;
 
@@ -279,7 +308,7 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
     //12 Update is called once per frame
     void Update()
     {
-        // if this one below is false (means that we are not detecting any touch)then we want to return it
+        // if this one below is false (means that if we are not detecting any touch)then we want to return it
         // 13
       if(!TryGetTouchPosition(out Vector2 touchPosition))
       return;
@@ -311,17 +340,17 @@ bool TryGetTouchPosition(out Vector2 touchPosition)
 <br>
 <br>
 
+### Now we want to shoot the Raycast
+
 #### ✋ So here below we have the _\_arRaycastManager_ that we have defined on the top
 
 ```javascript
-//
+//4
 private ARRaycastManager _arRaycastManager;
 
 ```
 
 ##### And then this one is going to use the raycast method which then give us a touch position, then it takes the "hits" from our static list on the top:
-
-<br>
 
 ```javascript
 
@@ -330,7 +359,7 @@ static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
 
 <br>
 
-### TrackableType 🍪
+## TrackableType 🍪
 
 ##### In general, a trackable in AR Foundation is anything that can be detected and tracked in the real world. This starts with basics like anchors, point clouds and planes. More advanced tracking even allows environmental probes for realistic reflection cube maps, face tracking, or even information about other participants in a collaborative AR session.
 
@@ -339,6 +368,10 @@ static List<ARRaycastHits> hits = new  List<ARRaycastHits>();
 <br>
 
 [<img src="./read-img/trackables.png "/>]()
+
+<br>
+
+> Each type of trackable has a corresponding manager class as part of the AR Foundation package that we added to our project.
 
 <br>
 
