@@ -695,6 +695,8 @@ void Update()
 
 [<img src="./read-img/Tap-to-place-Objects__result1.gif"/>]()
 
+> To enable the layers and all the extra data(the red and grey bar), go to the **developer options** in your phone
+
 <br>
 
 **capsule shape** , when you click inside the AR Session Origin, then go to the right of the window (where the components are situated), inside the **AR Plane Manager > Plane Prefab** you will see that the capsule is there, so in the next test, I will change the shape to something different and I will raise the opacity, which means it will not be transparent.
