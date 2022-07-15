@@ -695,7 +695,7 @@ void Update()
 
 [<img src="./read-img/Tap-to-place-Objects__result1.gif"/>]()
 
-> To enable the layers and all the extra data(the red and grey bar), go to the **developer options** in your phone
+> To enable the layers and all the extra data(the red and grey bar), go to the **developer options** in your phone. As you can see in the image above, I enabled also the **show taps** so that I can see where I am.
 
 <br>
 
