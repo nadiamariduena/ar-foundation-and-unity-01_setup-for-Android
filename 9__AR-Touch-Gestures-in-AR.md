@@ -682,3 +682,23 @@ void Update()
 ```
 
 <br>
+<br>
+
+---
+
+<br>
+<br>
+
+#### Result
+
+- Its apparently working but its not behaving like it should (I tap but the shape dont stay and is not possible to move it), if you notice in the beginning, you will see a **capsule shape** for a couple of milliseconds but not more, and that capsule is the one I have inside the **PREFAB**
+
+[<img src="./read-img/Tap-to-place-Objects__result1.gif"/>]()
+
+<br>
+
+**capsule shape** , when you click inside the AR Session Origin, then go to the right of the window (where the components are situated), inside the **AR Plane Manager > Plane Prefab** you will see that the capsule is there, so in the next test, I will change the shape to something different and I will raise the opacity, which means it will not be transparent.
+
+<br>
+
+[<img src="./read-img/prefab-capsule.gif"/>]()
