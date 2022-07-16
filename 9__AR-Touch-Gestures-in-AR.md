@@ -758,13 +758,14 @@ private bool placementPoseIsValid = false;
 
     // Update is called once per frame
     void Update()
+    // a create the methods
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
     }
     //
     //
-    //
+    // b fill the methods
     void UpdatePlacementIndicator()
     {
         if(spawnedObject == null && placementPoseIsValid)
