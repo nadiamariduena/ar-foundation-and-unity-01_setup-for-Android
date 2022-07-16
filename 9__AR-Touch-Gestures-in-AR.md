@@ -726,7 +726,7 @@ public class ARPlacement : MonoBehaviour
 {
 
 /*
-
+✋
 What i learned today:
  Since i am new with unity and C#, i discovered that this
  variable in this script here below "GameObject" is linked with the "empty" i create in unity, at the left side of the window (under the sessions"), this empty appears as GameObject when you create, then after it s created you can change the name to whatever you want, in this case i changed it to placementIndicator
@@ -740,6 +740,13 @@ public GameObject placementIndicator; // check the LOWERCASE in the P of placeme
 private GameObject spawnedObject;
 
 private Pose PlacementPose;
+
+/*
+✋
+this "ARRaycastManager" too corresponds to something I have in Unity, its actually the component I create under the session origin (right side of the window)
+
+
+*/
 private ARRaycastManager aRRaycastManager;
 private bool placementPoseIsValid = false;
 
