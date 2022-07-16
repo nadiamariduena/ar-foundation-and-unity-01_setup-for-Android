@@ -758,14 +758,14 @@ private bool placementPoseIsValid = false;
 
     // Update is called once per frame
     void Update()
-    // a create the methods
+    // ✋ a create the methods, to use this methods create this variable on top of the file: private GameObject spawnedObject; 🍭
     {
         UpdatePlacementPose();
         UpdatePlacementIndicator();
     }
     //
     //
-    // b fill the methods
+    // ✋ b fill the methods
     void UpdatePlacementIndicator()
     {
         if(spawnedObject == null && placementPoseIsValid)
