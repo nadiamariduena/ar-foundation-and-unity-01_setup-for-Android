@@ -704,3 +704,81 @@ void Update()
 <br>
 
 [<img src="./read-img/prefab-capsule.gif"/>]()
+
+<br>
+<br>
+
+---
+
+<br>
+<br>
+
+## New Test 🍨
+
+#### I am actually testing a new way of setting things up, I will be documenting things at the end of it
+
+```javascript
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ARPlacement : MonoBehaviour
+{
+
+/*
+
+What i learned today:
+ Since i am new with unity and C#, i discovered that this
+ variable in this script here below "GameObject" is linked with the "empty" i create in unity, at the left side of the window (under the sessions"), this empty appears as GameObject when you create, then after it s created you can change the name to whatever you want, in this case i changed it to placementIndicator
+
+
+*/
+
+public GameObject arObjectToSpawn;
+public GameObject placementIndicator; // check the LOWERCASE in the P of placement, as in unity we have it as PlacementIndicator and not placementIndicator
+//
+private GameObject spawnedObject;
+
+private Pose PlacementPose;
+private ARRaycastManager aRRaycastManager;
+private bool placementPoseIsValid = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        UpdatePlacementPose();
+        UpdatePlacementIndicator();
+    }
+    //
+    //
+    //
+    void UpdatePlacementIndicator()
+    {
+        if(spawnedObject == null && placementPoseIsValid)
+        {
+            placementIndicator.SetActive(true);
+            placementIndicator.transform.SetPositionAndRotation(PlacementPose.position, PlacementPose.rotation);
+
+        }
+        else
+        {
+            placementIndicator.SetActive(false)
+        }
+    }
+    //
+    //
+    //
+    void UpdatePlacementPose()
+    {
+        var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+
+    }
+}
+
+```
