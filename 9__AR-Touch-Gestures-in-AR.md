@@ -699,7 +699,7 @@ void Update()
 
 <br>
 
-**capsule shape** , when you click inside the AR Session Origin, then go to the right of the window (where the components are situated), inside the **AR Plane Manager > Plane Prefab** you will see that the capsule is there, so in the next test, I will change the shape to something different and I will raise the opacity, which means it will not be transparent.
+**capsule shape** , when you click inside the AR Session Origin, then go to the right of the window (where the components are situated), inside the **AR Plane Manager > Plane Prefab** you will see that the capsule is there, so in the next test I will change the shape to something different and I will raise the opacity, which means it will not be transparent.
 
 <br>
 
@@ -713,78 +713,151 @@ void Update()
 <br>
 <br>
 
-## New Test 🍨
+# 🍨
 
-#### I am actually testing a new way of setting things up, I will be documenting things at the end of it
+## [Beginners guide to UNITY AR Foundation (ARKit & ARCore) - Build your first AR app from scratch!](https://youtu.be/KqzlGApWPEA)
+
+<br>
+
+- Start by creating a new **3D** project, then once its created we will see that we have the basic set up(we dont have yet the XR "packages"), so at this point we just have the **Main Camera and the Directional Light**
+
+<br>
+<br>
+
+### Start by importing the XR packages 🌈
+
+<br>
+
+- Go to **window** > **package manager**
+
+<br>
+
+- Click on the arrow on the top of the window, then once the dropdown unfolds, click on the **Unity registry**, you can either install all the AR packages related, or you can also avoid unfolding the menu and just scroll down to do it one by one. **LOOK FOR** ARCore XR Plugin, and install it, repeat the same steps with the ARFoundation and the ARKit XR Plugin
+
+<br>
+
+- The tutorial was created a year ago so the version he is using are different **(3.1.8)**, right now I will be using the **(4.2.3)**
+
+<br>
+
+> 🔴 I will try this tutorial with this new version to see if it works, if it doesn't work I will try to downgrade few versions.
+
+<br>
+
+- ✋ After installing the packages you will notice the **XR folder** has been creating and is now in your unity dashboard
+
+<br>
+
+- ✋ Delete the default camera, as we will be using the XR main camera
+
+<br>
+
+- ✋ Add the <u>AR Session Origin</u> **(it contains the AR camera)**
+
+<br>
+
+## Now we need an indicator
+
+- This indicator will help us see where do we spawn our **Game object**
+
+<br>
+
+- ✋ Create an **EMPTY Game object**, right click under the **AR Session** (click on the dark space), once you right click on it and the menu unfolds, choose **Create Empty**
+
+<br>
+
+- ✋ Once the empty has been created, change the empty name from GameObject to **PlacementIndicator**
+
+<br>
+
+[<img src="./img-spiderapp/creatingEmpty-changingName.gif"/>]()
+
+<br>
+<br>
+
+> 🍨 Now that we have changed the name of the **empty**,
+
+<br>
+
+- ✋ **Right click** on the **empty** to unfold the menu, once the **menu opens** choose **3D Object > Quad**
+
+<br>
+
+[<img src="./img-spiderapp/empty-create3dObject.gif"/>]()
+
+<br>
+
+### Rotate the Quad 🍒
+
+- **Go to the right side** of the window (don't forget to click on the quad, OTHERWISE you will not see the options)
+
+### Scale 🍒
+
+- change the scale to 0.3 on the **x y z axis**
+
+<br>
+
+[<img src="./img-spiderapp/rotating-and-scaling.gif"/>]()
+
+<br>
+
+<br>
+
+## The script
+
+- ✋ Add another **empty** Object and call it **controller**
+
+<br>
+
+- ✋ Then go under the component where you change the name of the empty, and click on **add component**, there type **ARplacement**, you will not find it in the menu but click on **Script** then once it gives you the option of adding it, click on it (check the zoomed version of the image below)
+
+<br>
+
+[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script.gif
+"/>]()
+
+<br>
+
+#### Here I created it a second time just for testing 🍰
+
+[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script2.gif
+"/>]()
+
+<br>
+
+#### ✋ Now that we have the SCRIPT that will help us to put all the logic, lets check if we have all the _complementary_ scripts we will need in our <u>_AR Session Origin_</u> ✋
+
+<br>
+
+- 🔴 add the **AR Plane and the AR Raycast manager**
+
+<br>
+
+[<img src="./img-spiderapp/Add-plane-and-raycast-manager.gif
+"/>]()
+
+<br>
+
+#### Start working on the script 🍉 🥭
+
+- This is the basic layout of the script
 
 ```javascript
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ARPlacement : MonoBehaviour
+public class ARplacement : MonoBehaviour
 {
-
-/*
-✋
-What i learned today:
- Since i am new with unity and C#, i discovered that this
- variable in this script here below "GameObject" is linked with the "empty" i create in unity, at the left side of the window (under the sessions"), this empty appears as GameObject when you create, then after it s created you can change the name to whatever you want, in this case i changed it to placementIndicator
-
-
-*/
-
-public GameObject arObjectToSpawn;
-public GameObject placementIndicator; // check the LOWERCASE in the P of placement, as in unity we have it as PlacementIndicator and not placementIndicator
-//
-private GameObject spawnedObject;
-
-private Pose PlacementPose;
-
-/*
-✋
-this "ARRaycastManager" too corresponds to something I have in Unity, its actually the component I create under the session origin (right side of the window)
-
-
-*/
-private ARRaycastManager aRRaycastManager;
-private bool placementPoseIsValid = false;
-
     // Start is called before the first frame update
     void Start()
     {
-        aRRaycastManager = FindObjectOfType<ARRaycastManager>();
+
     }
 
     // Update is called once per frame
     void Update()
-    // ✋ a create the methods, to use this methods create this variable on top of the file: private GameObject spawnedObject; 🍭
     {
-        UpdatePlacementPose();
-        UpdatePlacementIndicator();
-    }
-    //
-    //
-    // ✋ b fill the methods
-    void UpdatePlacementIndicator()
-    {
-        if(spawnedObject == null && placementPoseIsValid)
-        {
-            placementIndicator.SetActive(true);
-            placementIndicator.transform.SetPositionAndRotation(PlacementPose.position, PlacementPose.rotation);
-
-        }
-        else
-        {
-            placementIndicator.SetActive(false)
-        }
-    }
-    //
-    //
-    //
-    void UpdatePlacementPose()
-    {
-        var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
 
     }
 }
