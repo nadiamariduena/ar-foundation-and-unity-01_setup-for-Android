@@ -555,10 +555,28 @@ https://youtu.be/KqzlGApWPEA?t=659
 
 <br>
 
-### Open the animation tab
+## Open the animation tab
+
+<br>
 
 - ✋ go to the **window > Animation**, then click on Animation, a window will appear, grab it and drag it to the bottom of unity window (has to be side by side with the project and console)
 
 <br>
 
-- ONce there, click on create, **create a new folder** and call it **Animation**, then when it will ask you to **save as**, name it as **Spider**, once you do that you will see that we now have inside the component of the spider, the created **Spider**
+- Once there click on create, **create a new folder** and call it **Animation**, then when it will ask you to **save as**, name it as **Spider**, once you do that you will see that we now have inside the component controller of the spider, the created **Spider**
+
+<br>
+
+[<img src="./img-spiderapp/anima-to-component-spider.gif"/>]()
+
+<br>
+
+#### Now do the following to add the animation
+
+- ONce you save it (read the step above)
+  , go to the **window > animator**, you will see that another window will open, there you will see something looking like [nodes](https://www.google.com/search?q=nodes+blender&client=opera&hs=27X&source=lnms&tbm=isch&sa=X&ved=2ahUKEwil-PvyhJr5AhWXtKQKHfNJAe0Q_AUoAXoECAEQAw&biw=1251&bih=739&dpr=1.25#imgrc=xZ7naDoK6y7y0M), delete the animation by default, this animations is called **jump**, but before delete it go to your PB_Spider > Models and drag the **jump** animation you find there, inside the window with the **nodes**, once the new **jump** animation is there, delete the default one
+  <br>
+
+[<img src="./img-spiderapp/animation-controller.gif"/>]()
+
+<br>
