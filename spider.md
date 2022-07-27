@@ -98,15 +98,13 @@
 
 <br>
 
-[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script.gif
-"/>]()
+[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script.gif"/>]()
 
 <br>
 
 #### Here I created it a second time just for testing 🍰
 
-[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script2.gif
-"/>]()
+[<img src="./img-spiderapp/createNewEmpty-callIt-controller-then-create-script2.gif"/>]()
 
 <br>
 
@@ -118,8 +116,7 @@
 
 <br>
 
-[<img src="./img-spiderapp/Add-plane-and-raycast-manager.gif
-"/>]()
+[<img src="./img-spiderapp/Add-plane-and-raycast-manager.gif"/>]()
 
 <br>
 
@@ -424,8 +421,7 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 
 <br>
 
-[<img src="./img-spiderapp/placementindicator.gif
-"/>]()
+[<img src="./img-spiderapp/placementindicator.gif"/>]()
 
 <br>
 <br>
@@ -440,8 +436,7 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 
 <br>
 
-[<img src="./img-spiderapp/placementindicator.gif
-"/>]()
+[<img src="./img-spiderapp/placementindicator.gif"/>]()
 
 <br>
 <br>
@@ -460,12 +455,10 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 
 #### choose model 🍰
 
-[<img src="./img-spiderapp/chooseModel-from-unityStore1.gif
-"/>]()
+[<img src="./img-spiderapp/chooseModel-from-unityStore1.gif"/>]()
 
 <br>
 
 #### download model 🧁
 
-[<img src="./img-spiderapp/downloadModel-from-unityStore1.gif
-"/>]()
+[<img src="./img-spiderapp/downloadModel-from-unityStore1.gif"/>]()
