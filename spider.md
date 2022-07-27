@@ -509,3 +509,13 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 [<img src="./img-spiderapp/icon-placement2-changincolor.gif"/>]()
 
 <br>
+
+#### Now apply the icon
+
+- click on the **PlacementIndicator**, click on the **quad**, drag and drop the **Indicator** material (that is inside the material folder)
+
+<br>
+
+> I thought there was a problem with the icon but since I added 0.3, its very small
+
+[<img src="./img-spiderapp/icon-placement2-applying-the-icon-tomeshRenderer.gif"/>]()
