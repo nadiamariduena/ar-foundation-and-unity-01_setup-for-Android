@@ -519,3 +519,24 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 > I thought there was a problem with the icon but since I added 0.3, its very small
 
 [<img src="./img-spiderapp/icon-placement2-applying-the-icon-tomeshRenderer.gif"/>]()
+
+<!-- 10:59
+
+https://youtu.be/KqzlGApWPEA?t=659
+-->
+
+<br>
+
+## 🍨
+
+### Get the animation out of the spider
+
+- when you click inside the spider folder or model, you see that it contains a couple of things (animations etc)
+
+<br>
+
+- ✋ **Click** on the **jump** animation of the spider, then **Press command + D** or strg + D
+
+<br>
+
+[<img src="./img-spiderapp/getAnimation-jump-out-ofThe-spider.gif"/>]()
