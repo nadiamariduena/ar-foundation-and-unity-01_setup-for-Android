@@ -490,4 +490,22 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 
 <br>
 
-- ✋
+- ✋ Now go to the **material folder** , create a new material, change the shader to transparent: **shader > unit > transparent**, once you do that you will have an option to upload or drop the icon
+
+<br>
+
+<br>
+
+> As you can notice, the icon is dark so it doesnt look so nice(just a matter of aesthetic, I dont know how it will appear on dark surfaces) so better to use something with color
+
+[<img src="./img-spiderapp/icon-placement1.gif"/>]()
+
+<br>
+
+#### I downloaded another (with color)
+
+<br>
+
+[<img src="./img-spiderapp/icon-placement2-changincolor.gif"/>]()
+
+<br>
