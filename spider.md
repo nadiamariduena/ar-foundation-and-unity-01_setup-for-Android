@@ -540,3 +540,17 @@ https://youtu.be/KqzlGApWPEA?t=659
 <br>
 
 [<img src="./img-spiderapp/getAnimation-jump-out-ofThe-spider.gif"/>]()
+
+<br>
+
+## 🌈
+
+### Now bring the spider to the scene
+
+- change the scale of the spider, from **1 to 0.1 or 0.2** as its too big
+
+<br>
+
+[<img src="./img-spiderapp/adding-the-spider-to-the-scene.gif"/>]()
+
+<br>
