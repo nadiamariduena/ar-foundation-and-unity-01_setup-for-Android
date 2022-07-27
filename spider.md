@@ -577,6 +577,8 @@ https://youtu.be/KqzlGApWPEA?t=659
   , go to the **window > animator**, you will see that another window will open, there you will see something looking like [nodes](https://www.google.com/search?q=nodes+blender&client=opera&hs=27X&source=lnms&tbm=isch&sa=X&ved=2ahUKEwil-PvyhJr5AhWXtKQKHfNJAe0Q_AUoAXoECAEQAw&biw=1251&bih=739&dpr=1.25#imgrc=xZ7naDoK6y7y0M), delete the animation by default, this animations is called **jump**, but before delete it go to your PB_Spider > Models and drag the **jump** animation you find there, inside the window with the **nodes**, once the new **jump** animation is there, delete the default one
   <br>
 
+  - check min: [12:23](https://youtu.be/KqzlGApWPEA?t=743)
+
 [<img src="./img-spiderapp/animation-controller.gif"/>]()
 
 <br>
