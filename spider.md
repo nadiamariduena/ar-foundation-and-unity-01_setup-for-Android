@@ -582,3 +582,50 @@ https://youtu.be/KqzlGApWPEA?t=659
 [<img src="./img-spiderapp/animation-controller.gif"/>]()
 
 <br>
+
+> 🔴 After adding the jump animation i got this errors
+
+```javascript
+NullReferenceException: Object reference not set to an instance of an object
+ARPlacement.UpdatePLacementPose () (at Assets/Scripts/ARPlacement.cs:80)
+ARPlacement.Update () (at Assets/Scripts/ARPlacement.cs:52)
+
+```
+
+<br>
+
+#### when I click twice on the error to see where is the error coming from, it makes reference to this:
+
+```javascript
+
+            var screenCenter = Camera.current.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+            // 17
+```
+
+<br>
+
+#### ✋ I notice that the error appears, when I click on **play** the animation
+
+<br>
+
+- At this point I dont know if its a big issue, but i will have to solve it if I want to **build it**,
+
+<br>
+
+[<img src="./img-spiderapp/error_afterAnimationPlay.gif">]()
+
+<br>
+
+---
+
+<br>
+
+## Create the PREFAB 🌈
+
+- Right click on the **assets**, create a folder, then change the name to **Prefab** , **DRAG** the spider inside the Prefab folder, it will ask you if you want to create a new spider or a variant, for now choose a variant, later on we will see if we need to delete the original one
+
+<br>
+
+[<img src="./img-spiderapp/prefab.gif">]()
+
+<br>
