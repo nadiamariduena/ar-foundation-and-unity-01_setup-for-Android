@@ -459,6 +459,35 @@ if(spawnedObject == null && placementPoseIsValid && Input.touchCount > 0 && Inpu
 
 <br>
 
-#### download model 🧁
+#### Download model 🧁
 
 [<img src="./img-spiderapp/downloadModel-from-unityStore1.gif"/>]()
+
+<br>
+<br>
+
+## Lets see what the model contains 🍉
+
+- inside of the model you will notice a couple of animations
+
+<br>
+
+[<img src="./img-spiderapp/model-animations-fbx.gif"/>]()
+
+<br>
+
+#### Add an icon to PlacementIndicator
+
+<br>
+
+- go to [flaticon.com](https://www.flaticon.com/)
+
+- Choose a **target** icon, but before downloading it to your unity, create 2 new folders in your assets
+
+<br>
+
+- ✋ CReate 2 new folders, a **Textures** and **Materials**, save the target icon inside the Textures folder(go to your unity project folder inside your comp, look for the one you are working and save it in the Textures)
+
+<br>
+
+- ✋
