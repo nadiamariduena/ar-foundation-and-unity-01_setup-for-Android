@@ -622,10 +622,79 @@ ARPlacement.Update () (at Assets/Scripts/ARPlacement.cs:52)
 
 ## Create the PREFAB 🌈
 
-- Right click on the **assets**, create a folder, then change the name to **Prefab** , **DRAG** the spider inside the Prefab folder, it will ask you if you want to create a new spider or a variant, for now choose a variant, later on we will see if we need to delete the original one
+- Right click on the **assets**, create a folder, then change the name to **Prefab** , **DRAG** the spider inside the Prefab folder, it will ask you if you want to create a new spider or a variant, for now choose a variant but if your really want to do it like in the video, choose the original, then delete the one under the **controller**
 
 <br>
 
 [<img src="./img-spiderapp/prefab.gif">]()
 
 <br>
+
+#### Now that you deleted the spider under the controller, lets continue with the export settings
+
+<br>
+<br>
+
+## Export settings 🍰
+
+<br>
+
+- If you havent done it already, switch to the **android** platform (**File > Build settings** )
+
+> ✋ then click on the **Player settings** , once it opens this new window , go to **Player**, then check the arrow with the **Other settings**, once there:
+
+- at the top of the window, choose a name, by default you have (Default Company) , but you can change that to whatever you want, for this project i will add **DefaultCompanySpider**
+
+<br>
+
+- change the **Color Space** from Gamma to **Linear**
+
+<br>
+
+- check the **AutoGraphics** , you will have to options there for the graphics API: OpenGLE3 and Vulkan, delete the vulkan by clicking in the minus - (at the right side of the window)
+
+<br>
+
+- Now scroll down in the same window, go to the **Minimum API Level**, choose Android 7.0 Nougat (API level 24)
+
+<br>
+
+[<img src="./img-spiderapp/basic-building-setup.gif">]()
+
+<br>
+<br>
+
+#### Close the window and go back to the scene 🌈
+
+<br>
+
+- go to **window > General > Game** once it creates the tab, go to the aspect ratio and choose **1920 x 1080**
+
+<br>
+
+[<img src="./img-spiderapp/aspectRatio.gif">]()
+
+<br>
+
+### Now that you have the settings above, Go back to the payer settings
+
+<br>
+
+- ✋ **File > Build settings**
+  <br>
+
+> ✋ then click on the **Player settings** , once it opens the window , go to **Player**, then check the arrow with the **Resolution and Presentation** tab, once there:
+
+<br>
+
+- Go to the **Default Orientation** , choose **Portrait**, close the window.
+
+<br>
+
+<br>
+
+[<img src="./img-spiderapp/aspectRatio2.gif">]()
+
+<br>
+
+> #### Don't forget to add the scene, like you see at the end of the gif above
