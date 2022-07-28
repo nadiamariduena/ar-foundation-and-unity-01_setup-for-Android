@@ -702,15 +702,17 @@ ARPlacement.Update () (at Assets/Scripts/ARPlacement.cs:52)
 <br>
 <br>
 
-#### 🔴 A last thing...
+#### 🔴 ARCore Plugin
 
 <br>
 
-> check the the **XR Plug-in Management** so that you don't have the black screen issue, when testing it with your phone.
+> ✋ A last thing... check the the **XR Plug-in Management** so that you don't have the black screen issue, when testing it with your phone.
 
 <br>
 
 - (**File > Build settings** )
+
+<br>
 
 > ✋ then click on the **Player settings** , click on the **XR Plug-in Management** then **check** the **ARCore** thats all (in some versions you will have to click on install then you have the option to check on the arcore)
 
