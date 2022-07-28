@@ -721,3 +721,21 @@ ARPlacement.Update () (at Assets/Scripts/ARPlacement.cs:52)
 [<img src="./img-spiderapp/arcore-plugin-building-settings-avoid-blackscreen.gif">]()
 
 <br>
+
+<br>
+
+# 🍨
+
+#### After you have all the set up above, go to the:
+
+- (**File > Build settings** ) and while there click on **Run device** to see if your phone is connected to unity, **if you are not connected**:
+
+<br>
+
+- 🔴 Connect your usb cable to your computer and phone, once it s connected your phone will ask you if you want the connection to be made, and then will ask you for **permission**, once you do that check your unity and click on **refresh**, there you will see your device, now you can click **build and run**
+
+#### Result
+
+- I tried to put the target in the sky but it doesnt work, at the moment there are many things I dont understand, but its already a good thing that the **tap/touch** is working.
+
+[<img src="./img-spiderapp/result-spiderTest.gif">]()
