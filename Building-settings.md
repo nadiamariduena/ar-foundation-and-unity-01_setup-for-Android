@@ -1,6 +1,10 @@
 ## Export settings 🍰
 
-#### This is the basic you need to build the scene, but not all the projects are the same, so you will need different setting depending on what you are working on.
+#### This is the basic you need to build the scene, but not all the projects are the same, in the [6\_\_AR-foundation.md](./6__AR-foundation.md) you can notice that its a bit different, and the reason for that is that <u>depending on the version,</u> you will need more or less settings.
+
+<br>
+
+> ✋ then you will also need different settings depending on what you are working on.
 
 <br>
 
