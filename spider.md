@@ -695,6 +695,17 @@ ARPlacement.Update () (at Assets/Scripts/ARPlacement.cs:52)
 
 [<img src="./img-spiderapp/aspectRatio2.gif">]()
 
+> ##### Don't forget to add the scene, like you see at the end of the gif above
+
+<br>
 <br>
 
-> #### Don't forget to add the scene, like you see at the end of the gif above
+#### 🔴 A last thing...
+
+> check the the **XR Plug-in Management** so that you don't have the black screen issue, when testing it with your phone.
+
+<br>
+
+- (**File > Build settings** )
+
+> ✋ then click on the **Player settings** , click on the **XR Plug-in Management** then **check** the **ARCore** thats all (in some versions you will have to click on install then you have the option to check on the arcore)
