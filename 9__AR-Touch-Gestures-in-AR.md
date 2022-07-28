@@ -693,9 +693,23 @@ void Update()
 
 - Its apparently working but its not behaving like it should (I tap but the shape dont stay and is not possible to move it), if you notice in the beginning, you will see a **capsule shape** for a couple of milliseconds but not more, and that capsule is the one I have inside the **PREFAB**
 
+<br>
+
+- 🔴 So I am going to test this other tutorial [9\_\_AR-Touch-spiderTest](./9__AR-Touch-spiderTest.md) to see if I can make it work, and yes in this tutorial the touch work, so when I tap on the screen after i choose the target, the model appears, but it s not possible to move it to another place
+
+<br>
+
 [<img src="./read-img/Tap-to-place-Objects__result1.gif"/>]()
 
-> To enable the layers and all the extra data(the red and grey bar), go to the **developer options** in your phone. As you can see in the image above, I enabled also the **show taps** so that I can see where I am.
+#### data
+
+> To enable the layers and all the extra data(the red and grey bar in my phone), go to the **developer options** in your phone.
+
+<br>
+
+#### show taps
+
+- As you can see in the image above, I enabled also the **show taps** so that I can see where I am.
 
 <br>
 
