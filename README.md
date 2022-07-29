@@ -43,6 +43,19 @@
 [<img src="./read-img/Building-plane-success.gif"/>]()
 
 <br>
+
+#### [9\_\_AR-Touch-spiderTest](./9__AR-Touch-spiderTest.md)
+
+[<img src="./img-spiderapp/result-spiderTest.gif">]()
+
+<br>
+<br>
+
+- ✋ Variants with **animated icosphere** [icosphere\_\_spider-Variant](./icosphere__spider-Variant.md)
+
+[<img src="./img-spiderapp/icos-with-anim.gif">]()
+
+<br>
 <br>
 
 ---
