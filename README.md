@@ -24,7 +24,7 @@
 
 <br>
 
-#### the project
+#### the project 🌞
 
 #### [6\_\_AR-foundation](./6__AR-foundation.md) ✋
 
