@@ -1,4 +1,4 @@
-# 🌈 AR Foundation & Unity 01: Setup for Android 🌈
+# 🌈 AR Foundation & Unity 01: Setup for Android 
 
 <br>
 
